@@ -16,7 +16,7 @@ with open(csvpath) as csvfile:
     # Create empty dictionary to hold candidate names & vote tallies
     candidates = {}
     
-    # loop through csv to make dictionary entries & tally votes
+    # loop through csv to make dictionary entries & tally votes (credit to Devin for helpig me figure this out)
     for x in csvreader:
         if x[2] not in candidates:
             candidates[x[2]] = 1
